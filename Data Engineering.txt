@@ -1,0 +1,42 @@
+Data engineering--
+https://courses.analyticsvidhya.com/certificates/v8manxniuk
+
+Architecture--
+what is the technology stack to be used . This is decide by sol architect.
+lets say for fron t end--angular js backend mysqland mongo db db, for some 
+of the scrpts forthe backend, we willuse flask framework wich uses python and git
+for version control.
+
+Now,we are using 2 diff types of dbs-- mysql and mongodb, for the transactional
+data like user details,suplier details,prod  trxs and refund requests.
+
+And for products catalog and clickstream data we will  use nosql db like mogodb.
+Diff categories of products have diff features,so,doc based db would be a good choice
+to use.
+At this stage, the data eng would be required to define the tables and there relationship.
+Also need to choose appropriate data types,keys indexing, and partitioning.
+A data eng is required to  write optimized queries so that we can connect with frontend.
+ now,in 2014 we got an avg of 4000-5000 custs,with an avg 100-200 trxs.
+in 2016,increased to 100000 and from diff parts of  world,
+Delivery inIndia is ok but outside isdelayed.
+So,the solu architect came upwith idea of keeping copy of this db at some other part ofworld 
+aswell.But maintenance  was still difficult.So sol architects thought of moving resources to cloud.
+
+So,lets say in cloud they seleted aws--nowon aws they selected amazon rds,using which u can create 
+mysql hosted and for replacemen of mongodb --documentdb on aws.
+i.e. for trx data stored in mysql-- replacedwith amazon rds, and products catalog--mongoDB with aws documentDB.
+
+Nowthe jobof data engin is to help in migration fromon-premise to cloud.
+So data engineer makes sure all the queries are working properly.
+
+Now,data analyst team extract data fromthese dbs every 24 hrs, and do analysis an generate reports.
+The prob arise when data anlyst want to extract this data multiple times.If db goes down,it reduce the user experience.
+To deal with this problem, data eng will launch feew more instances of amazonrds and documentdb.
+And these will be only for data analyst and not for custms.
+Sfter every few hours,new data will be extracted from etlpipeline and loaded into amazonrds.
+Finally we can also connect these dbs to businessintelligent tools.So this etlpipeline is dataengs job.
+
+At this point data engmustknow-- prog lang-- pyhton/java, db--mysql,postgresql,linux shell cmds
+cloud computing--aws/azure/gcp.
+He orshe should be able tobuild etlpipelin,basics ofdata warehousing and fundamentalsof bi tools.
+ 

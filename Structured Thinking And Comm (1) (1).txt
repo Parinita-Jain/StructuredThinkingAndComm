@@ -1,0 +1,1125 @@
+Structured thinking is a process of putting a framework to an unstructued problem.
+
+Lets say u r a data scientist at an ecommerce company.Lets say u r the data scientist who helps the sales director
+to increase revenues from existing customers.Now how would u approach this poblem?
+Here it is an unstructured problem as we donot have any algorithm.
+So what u can do--
+revenue fromexisting customers=#customers*Return rate(%)*conversion rate(%)*Average purchase value order($) 
+conversion rate means how many customers convert or buy the product.
+Now,this eqn may vary.
+Now breaking this eqn--
+RR(%)--how can we increase return rate.Can u offer more relevant email campaign? Sould u approach customers in a specific manner?
+such that thy come more into ur site.
+CR%--is the % of returning customers who make a new purchase.Can u offer a person some offer or cross-sell or upsell while they are
+onsite to increase to increase their chnces of return.
+APV$-And finally when the customer returns canu increase the avg purchase value.
+
+Another use case--There is a bank who is eperiencing high charge-off in the recent year.So,u r working for a bank as
+a data scientist and charge offs forthe bank has increased significantly in last few months.
+Now the chief risk officer comes to u and asks that can u help hime or her diagnose this issue.
+Where a charge-off is basiclly the debt that is unlikely to be fulfilled because the borrower isunable to pay it back for reasons
+like delinquency or bankruptcy
+https://www.investopedia.com/terms/c/chargeoff.asp
+
+Conveting this unstructured problemintostructured ---
+High charge offs can be becuase of--
+external factors like unemployment ,risk worseninginthe economy,or may be becuase of internal factors like-
+some new productlaunch,change in credit risk policy,or credit card score degradation.
+   
+So,lets say a case study is regarding marketing manager at a bank and there is ameeting where they will decide which vendor
+they will choose for future marketing.
+1st lets say evaluate the service providers.
+customer list-i.e. compare what kind of customers they have served in the past and how many of them have been successful ventures.
+2nd vendor's pricing. 
+3rdreferences-- i.e. reaacing out to their previous clients and ask them.
+4 th- vendor's geographical spread
+5th-how long they have beenin business.
+
+Now,lets say if all of these 5 info is given will u be able to solve the problem?
+here common mistake is no framework,no structured approach.
+
+So always collect ur thoughts and have a framework.
+
+So we can ask interviewer ques like is this campaign meant for new customers or 
+connecting with their existing customers?--lets say he says for new customers.Then--
+So, laying out some framework.1st thing to understand is ReturnOnInvestment or ROI accr to campaign--
+So,ROI=Return of the campaign/Cost of the campaign.
+Return of the campaign--can be broken into--(emails that are being sent out*delivery rate*respose rate * customer lifetime value)/(No of mails*cost per email)
+
+No.ofmails-so the quest we can ask the service provider is what is the capacityof delivery?
+Can they scale uptheir ops to meet our requirements.,then their speed of execution.How quickthey ae inmeetingour requirments.
+
+Delivery rate--Their geographical spread.What is the trend-what is the quality of delivery.
+RR and CLTV-These 2 are moreonus then the service provider.
+
+CPM-Again I look at 2 factors.Can we askthe service provider to give us a discount.If its a bulk email,then bulk discount.
+If weget a dealforlong time contract.  
+
+There can be some other tangible factors but for now,it can be a good framework.
+
+Now, letssay in a meeting ,there are 2 vendors--vendor A and vendor B.
+
+vendor A-70% delivery rate,1%RR,price=rs 5,cltv-on an avg when we get a custwe make around 2000 rs from them overtheir lifecycle 
+vendor B-90% delivery rate,1%RR,pric=rs 8,2000
+
+Now,this is the info given.Now u again ques-
+can u tell methe no.of mails that we are sending out from both of these vendors.Lets say assuming 1000 mails.
+A=1000*0.70*0.01*2000/1000*5=2.5
+B=1000*0.90*0.0*2000/1000*8=3.375
+So, judging by this, Vendor B is giving beter ROI.
+Now,once u informthis tovendor A, he says he can assure u of 85% delivery rate.
+Lets say Now,ROI_A=3.4---once this happens,we can think about other intangible things,like capacity to deliver,
+speed of execution,their professionalism ec and then we can make judgemnet.
+Now, Also the change in value is effecting any of the other vaues? like cltv
+Now, wha actually mattered is-deliverr rate/cost of making each delivery of the mail.
+
+Data Science life cycle goes like--prob def, hypo gener, data collect,data explora and trans,model building,model implementation.
+
+Pob def is almost vague-- the leadershipteam expect their data science teamto figure out how tostop declining sales without having to 
+cut cost.
+Lets say,consider an eg of an ecommerce company. BProb is -i want to increase the revenue of our business by 20% without increasing costs.
+Now,converting this intoa data problem.
+So the data problem is like--cani identify existing customers who are likely to buy more products frm us and we can target them directly
+for specific campaigns.
+Now,its very imp to avoid confirmation bias at this stage. 
+
+Now,once the prob stmt is clear, we can gotohypo generation which directly comesout from hypo generation.
+
+eg--which existing customers are likely tobuy fromus again?
+So we can divide our customers whoare likely to buy again based on vrious sectionslike geography,product,demographics,channel of First Buy,Time Since first buy.
+The idea here is to generate an ehaustive list no matter how crazy it sounds.
+Now, strucured thinkinghelps here again sothat u donot stray away fromthe prob stmt and build measurable hypo. 
+
+Then comes data extracion/collection.Here we ans 2 key ques--
+What data do u need(based on ur hypo) and wha t data is actually available.
+This helps us narrow down into smaller and more focused bit of analysis.
+Then pre modelling steps to ensure there are no missing values,outliers,etc.
+Wecan use visualization tech to validate our hypotheisis.
+
+Here u can que like- what is the rellationship betwe diff variables,concepts likecorr,
+secondly,is their any transformation requ on the data.
+Then model building--
+so here 1st look into the right evaluation metric for the problem.
+If it is a regr prob or classif. If class then AUC score or F1-score. 
+What kindof models should webuild?--does the organization have computational powerr and the resources to support
+the models we need to build?Is interpretability more imp then accu?
+What abot validation strategy? How do we ensure our model works well on unseen data?
+
+And finally we come toimplementation ofmodel.
+
+This is where we tie back our datas cience work inothe overall business value.
+If multiplemodels arethere then we need to use the one which fitsbest the business strategy.
+For tis understnad the business metric vs the statistical metric.
+andfinalize a framwork for monitoring our model.
+
+Business Problem
+
+You are a data scientist working for an e-commerce company. The company is expanding aggressively and the leadership team has asked you to come up with a plan to increase revenue by 25% in the next quarter without having to cut down on any existing operations.
+
+Now, use this statement and plug it into the overall data science lifecycle we covered in this module. We have provided the six stages here – you need to fill in each stage with your answers and thoughts.
+
+
+
+1) Problem Definition
+
+Convert the business problem into a data problem
+
+
+
+2) Hypothesis Generation
+
+Generate a set of hypotheses based on the problem definition
+
+
+
+3) Data Collection/Extraction
+
+What kind of data do you need based on the above hypotheses? Which variables do you require and how would you collect them?
+
+
+
+4) Data Transformation and Exploration
+
+a) What kind of visualization techniques will you use to explore the data?
+
+b) Do you need to transform any variables before proceeding with the analysis?
+
+
+
+5) Model Building
+
+a) What is the evaluation metric for your problem?
+
+b) What kind of models will you build?
+
+c) What if your model validation strategy?
+
+
+
+6) Model Implementation
+
+a) Which model, based on the ones you have built, is best suited to your business problem? Is there any trade-off between the accuracy and the interpretability?
+
+b) Any specific steps you’ll follow for monitoring your model’s performance?
+
+Submit your assignment
+You may only submit one file with maximum 100 MB in size
+
+
+You can mention the steps that you would undertake in each phase. You can submit a word doc for this.
+
+Q:1.  Can we take into account New Customers or need to deal with Existing Customers?
+
+
+
+Q:2. Can we break down Problem definition further like instead to increase revenue we can increase quantity  of items sold 
+
+Or high margin product range can sold
+
+Or can increase the order quantity at dealer level to get our goal 
+
+Or can increase Sales target of Regional Sales officer in this Quarter ?
+
+1. The idea is to expand the business without cutting the current operations. So you can take into account the new customers.
+
+2. The revenue can be increased by multiple factors. So indeed, the idea is to find all the possibilities and look at how to achieve those.
+
+
+For clustering techniques, we generally use evaluation metrics like Inertia or Dunn Index.
+
+--
+Understanding and defining the problem stmt--
+1.Importance of defining prob stmt--
+Now,business leaders expect data scientists to solve  business problems .They dont give u data problems.
+As a dta scientist u do mapping of these business problems todata science problems using diff tools and techniques.
+
+
+case study-skip trace for a bank--
+they acquire customer--who then do credit card spend.But some of these customers subsequntly become not contacted and not paid. i.e. skip trace.
+The customer who dint paid in 90days and connot be contacted in90 days,
+goes into a process clled skip trace.
+Nowbank do skip trace methods like-writing themphysical letters,contactingthemon whatsapp etc.
+So,characteristics of skip trace account- very difficult to contact, any improvement in collection directly impact bottomline.
+Now, worsening of these accounts can be an early indicator of overall risk worsening.
+Now, what was happening in this case is- analyst was tracking these accoutson amonth by month basis,
+now,in te last3months, % collection defined as - % collection paid back after getting in skip trace in 30 days.
+The analyst raised a red flag reporting it to chief risk officer--"We have observed a significant worsening in skip trace accounts
+over last 3 months and we can say with more than 95% confidence tat this is not a normal variation.
+"
+
+Now,the aftereffect of this is multiple months were spent by a datascience team on why this was happeing.
+taking into consideration all other risk worsening factors were with in expectations.They created whole set of hypothesis.But at the end ofthe day
+they were unable to conclusively say why this was ahppening.
+
+Now, during this process the bankchanged some strategy.
+The calling intensity had increased for the period before accounts entered skip trace.
+SOpreviously if they were getting 1 call a day,now they are getting 3 clls aday on an avg.
+Because of which the amount which was getting collectedafter skip trace, got collected beforehand only.
+Whic endeduploking like skiptrace collec gone down.
+So from skiptrace perspective,the no. have gone down but fromthe overall perspective,its good.
+Now,because analyst looked only at a skp trace perpective,they errorneously concluded that.
+
+Stepframework--Now how to make sure that the problem is defined in the right manner?
+
+steps
+1-using TOSCAR framework--Trouble,Owner,SuccessCriteria,Constraints,Actors,Reference
+2-frame the problem stmt.
+3-break into smaller problems.
+4-convert each of these smaller problems intodata problems.
+5-find sols to the data problems.
+
+TOSCAR framework for defininga problem----
+
+Trouble--
+Understand the trouble and formulate a problemstmt.Whynow? Be specific.Make sure it highlights
+the problem and not solution.eg-segmentation.Ask why multipletimes.
+
+Who is going topay forthe sol?Look at problem fromthe perspectiv of the owner.
+What does succes looklike to them?
+How would we know that we have suceeded?What are other ways to achieve the same outcome?Would that 
+be considered as success?
+What are the constraints in which u need tosolve the problem.
+like budget constraint,comm constraint,etc.
+What trade offs ae acceptable.
+What isin scope and what isout of scope.
+Who are the actors and stakeholders.
+References-past efforts in solving these problems.Dont rely toomuch on it.Still consider it.
+
+eg--
+Business problem--Salesdirector ofan ecommercecompany - I want to increase revenue fromour existing customers.
+Canu helpus do that?--Now,why arewetrying todo this?Why nly existingcustomers andnot new customers?
+why now?So itmight be because company has tospend alot ofmoney to acquire new customerswhere as existing cust 
+are already there with the company.
+Where does it fit in the priority of the salesdirector?How imp it is?Is there any specific key area that sales
+directorhas?Any strategic prioriies ?Is thre any cross-sell practice which is there inplace?
+If there is then what is it not delivering or what more sales director wants?
+And if there was no strategy then wy there was no cros sale strategy in the first place.
+Any competiiton benchmarks.
+So this are few ques which will help uunderstand underlying trouble or motivation.
+
+Then owner ofthe problem-- now because sales director came tou,so they have some interest in it.
+But are they really the owner?customer mgmt director?
+Then ifu comeupwith the sol, then whowouldown the implementation?letssay if u comeup with customers
+who will buy the product then who wouldimplementation willliewith?salesdirector or customer mgmt director.
+What about otherleaders? Dothey feel regarding this problem?  
+
+Then how we will measure success?--avg spend from existing customers?% of custo buying over a time period?What would we want to achieve in
+what time frame?
+Then,is there any other manner in which we can achieve same sucess.
+
+Constraints?-how many comms can we do  with a custo in a day/wek/month.
+How much can we spend?Is ther any budget?
+How much past data do we have?
+Are there anyregulations?
+Tradeoffs- for eg if we send alot of emails, customersmight end up unsubscriing.
+
+Who are the actors/stakeholders- sales team/director,cust mgmt,ceo,operations team,brand comm and marketing
+
+HAve we tried in the past?-what werre the results?How arecurrent cross salestoexisting customershandle?
+
+Now,taking i/p fromthis framework,problem stmt is defined.
+So,business prob was--I wantto increase revenue form our
+existing customers.Can u helpusdo?-sales director
+Prob stmt--increase x% revenuefrom existing customers in next y months to reduce
+reliance on new cust for delivering topline/bottom line.
+
+Decomposition
+Now convert  the problem into an equation.
+eg. profit=revenues-costs
+revenue from existing cust=#cust*rr*cr*apv
+i.e. how many customers are out there*how many comes back to ur site*out of those who come to ur site how many convert*and once they convert what is the typical value which they provide.
+
+Now, can u generate a model which tells which customers are likely to come back to ur site in next 30 days.
+lly, if the customer is in ur site, can u predict if the customer is likely to convert or not.
+Other way is MECE principle or mutually exclusive collectively exhaustive-here we take entire problem and decompose it into smaller problems which are mutually exclusive.
+For eg u want to increase customer satisfaction-So u will break this into smaller functions like sales,marketing,operations,Information Tech-mobile app, web interface,others.
+Each of these are mutually exclusive but collectively they all adsdress the problem.
+So, now u take the individual tool and again decompose it till tools and technology.In case of sales u might have a way in which u can say that can we predict using data which customers are likely to buy and can we proactively reach out to them?So u can solve customer satisfaction at this stage itself.
+Where as in case of IT u need to decompose it further by various projects or various tools for diff interfaces where customer might be interacting.
+Now, each of these problems are converted into data provlems and map ur solutions to these problems.
+
+Now, common pitfalls to avoid while defining a problem--
+
+problem 1-- sol confiramtion--make sure that a problem is a problem and not a solution. For eg create a segmentation is a problem and not a solution.
+Ask why multiple times.Seek alternate solutions.
+2. Wrong framework--Some wrong assumptions and black spots. eg-- to improve hiring decisions , a call center company is tempted to use ml algo to select job applicants for the personality traits of current , longer tenured employees.
+So it does what-- it asks tenured employees to take tests-->build a set of desirable features--> find people with these desirable features.
+But the ques is should the company go with longer tenured employee or better performing employee or with some other assumption?Only choosing longer tenured employees can be a flawed assumption because it is possible that these employees are not getting job anywhere else. And so our Ml model will also have a biased o/p.
+3. Narrow problem framing-- mapping to past problems and solutions.Superficial understanding.
+
+So fiff cognitive biases are--
+corr vs causation,selection bias,availabilty bias,hidsight bias,overconfidence,etc.
+
+Best practices to reduce biases are-- use a process, start with a clean slate,challenge the status quo,seek multiple perspectives,search for more info and data,reflect on ur own views and values and Be AWARE.
+
+
+Before we give you the answer to this course’s main problem statement, we want you to use the framework we covered in this module and try to convert the below business problem into a data problem. All the best and do attempt this!
+
+
+
+Business Problem:
+
+Bank X owns both the lending and deposit portfolio. A portfolio includes the following instruments:
+
+Deposit
+
+Loan
+
+Credit cards
+
+Mortgage
+
+Now, Bank X is looking to expand into multiple sectors. However, to meet regulatory constraints, the bank can only expand lending products if it is able to increase deposits. Hence, the core business problem is to somehow increase the deposit balance.
+
+So, the bank has employed you as a consultant to research the best strategy to increase deposits with a limited amount of investments. Try to decompose the problem and convert it into a data problem.
+
+
+
+Here’s a hint to get you started:
+
+Total Balance = Balance/customer * #customers.
+
+The bank’s customers are basically at 3 stages:
+
+Newly acquired customers
+Existing customer who are here to stay, and
+Customers who are about to leave
+Each of these segments needs a different type of strategy to either increase the number of customers or Balance/customer. The acquisition portfolio might need promotional balance to open a new account or a balance hurdle. An existing customer might need cross-sell or up-sell campaigns. Customers about to about to leave the bank might need a retention campaign.
+
+
+
+Additional Info:
+
+Now, the question is - which of these three has the highest ROI? Turns out that any customer saved brings in 10X the value than any new customer with the same investment. Additionally, any customer saved will retain at least 5X the balance that we can increase of our existing portfolio. With this additional information, try to refine the scope of the problem.
+
+
+Framing the problem stmt for the course--
+
+Case study for the course--
+one of the largest bank in the country.--Overall portfolio has total 225000 customers.
+Can u identify which customers are likely to carry low balances on their accounts in coming months?--dir, Customer Mgmt.
+U r the only data scientist in the team currently. What would u do next?
+
+Going by TOSCAR framework--
+Trouble?-- what is the underlying trouble?,Why do u need to predict customers who would carry low balances?Why now?Is there any time sensitivity?Are we working on a timeline?
+Owner--?--customer mgmt director. Anyone else?
+Success-- what would success look like? How would u act differently if i was able to provide these predictions to u at a customer level? How would we measure the benefit out of it?
+Constraints--Are there any trade -offs ? What other problem can we work on? How much money can we spend on this?
+Actors/Stakeholders--who are the other stakeholders?--customer mgmt director,head of comms,head of marketing?
+References--did we try it in past and what was success like?
+
+After all these steps u realize - actual trouble was falling/stagnating balances for customers in last 3 months.
+When The cust mgmt dir saw the graph , his hypo was if they can identify the customers who would be on low balances, they can act on it.
+
+So, the prob stmt changes and now it is-- can u identify which custs are likely to carry low bals on their accounts in coming months? to---
+can u identify custs who are likely to churn x% of their bals in next y months?
+
+So, in stmt 1 im not taking into consideration what was the initial bal of the acc. So even if a cust was on , lets say 0 bal and they have reached to a bal of 100,I wouls still include them in the list,which i would need to solve prob 1.
+
+Also, ifi perform these predictions today and hand them over to u tomorrow,wouldu be able to act on it?
+
+So,in allur problemsmt u shouldtake into account a period
+
+"Can u identify who r likely tochurn x% oftheir balances in nex y mnths
+after z months of implementation lag?" 
+
+In addition to these u should also  look at the  diff types of comm u have been sending to ur 
+customers in last 6 months or last 12 months.U should ask
+has there been any chnge in srategy?Did we start sending more comms or less comms?
+Was there any offerstothe customers whih was there wich waswithdrawn in this period?
+etc.Can u quantify these.
+Also,go through cust mgmt process ofur bank and some ofthe other competitior
+bank to se if there is any diff?Use ur team and broader stakeholders.
+Performqualitative research,if required.
+
+Module 6 -- hypo generation--
+The null hypo is assumed to be true untiland unless provn to be wrong.
+
+Lets say ,the sales of a eyecare company has been trending down forawhile.
+week 1:actual sales -0.8x,sales in last quarter(sameperiod) x,change in sales- -20%
+Lets say the datas cienceteam comeswith  the model,but lts say in 1st quarter, sales continue
+to fall.Sois the model at fault?--letssay 1data scientist sAY-- our model isnotworking.
+And other say-- its just a random occurence.
+
+Now,think what is the nullhypo and alternate hypoin this eg?
+null-- sales are down due to random occurence.
+alternate-- our model is not working.
+
+Hypo building is the crucial step in data science life cycle.
+Ahypo is a possible view or assertion ofa data scientist about the problem he or she is working on.
+It may or may not be true.
+
+Being right is not focus here.Its about building a set ofquantifiable hypo that u can test later 
+to analyze and dig deeper into ur problem.So,the frmeworkfor hypo is--
+list down exhaustive set of hypo.Do this before looking
+at the data.Then check if these variables are available or can be collected.
+Pull and clean the data and finally validate ur hypo using data analysis.
+
+
+Why upfront hypo building is imp and who should be involved?
+non-hypo driven data analysis and hypo driven analysis.
+In the former --collect the entire data,analyze every variable available tous,could lead to narrow vision.
+While in later-- list hypo before looking at the data.Smaller and specific pieces to work with .Providesan unbiased view.
+So basically here u hve exhaustive set of hypo-->collect data-->test ech hypo
+
+Wo could be involved in hypo building?--
+involve all the relevant people/team in thi process.
+stakeholders,datascience team,marketing team,salesteam
+
+How to build a comprehensive hypothesis set?
+
+eg--now the stepsthatwewillseee can be done inparalllel.
+list down whatever comes to ur mind-demographics,behaviour,conversions,campaigns,comparative analysis,etc.
+Then start writing down hpo undereach section.
+Then we start involving diff buiness sectionslike finance,operations,marketing,sales,HR,etc.
+Then map diff variables to each hypo.
+The diff hypo levels, exhaustive set of hypo,business functions steps ca be in parallel.And not necessarily need to
+be 1 after another.
+
+So,take ur favourite store or website an think of ways u canincrease footfall or traffic.
+
+Now,how to take next step---
+the sales of eyecare productsare going dowmn.U want tofind out why and fixthe problem.
+So this is our problem stmt.
+Now, coming down to hypo-- we can do thorough competitior analysis,demographics,seasonality trends,behavioural pattern as well
+Now,foreach section list down hypo-- like
+have competitor slashed prices?has a new competitor emergedin the market?
+has a competitor suddenly risen up in rankings? have any competitor opened new stores at multiple locations? 
+Is any competitor expanding ops? Have they hired a wellknown influencer in te leadership team?
+
+Demographics--
+Are some regions facing technical challenges with payments? did we change a store location recently?
+did we change the store's layout? has our cust avg age changed since this trend started?Has a similar store opened
+up near our store location(s)?
+
+Behavioural trends?
+is the freq of new users declining?is the freq of returning users declining?
+is our monthly customer churn high? has there been a change inproduct selection?
+Is there any one brand forwhich sales aredown?Is the time spent pervisit down?
+
+Seasonality trends-
+are the current market conditions down? Is there any new policy directly affecting customer's spending?
+Is there any specific day ofthe week when salearedeclining?
+
+How many hypo should u build?--
+generally a set of100 ormore hypois good tostart off.
+
+Now,what if u miss out on some infor which was available in a variable?
+But we didint form a hypo?This is where the importance ofcomprehensive hypo
+comes.
+Now,whatifu r new to a domain anddonot have a business understanding?
+Nowhyposhouldbe quantifiable-- i.e.instead of writing -design Awill improvethe user experience and featureB will drive
+user engagement. Writelike- signups on the site willincrease with design A.
+conversion rate will goup with feature B.
+
+BUilding hypo for probstmt-- 
+what cust segments are morelikely to churn balances in the next quarter by atleast 50% vis-a-vis current quarter?
+Demograhics ,cust behaviour, psychographics
+
+Demographics- are females less likely to churn than males? Are young custs more
+likely to churn? Are custs located in tier-1 cities more likely to churn?
+Are married people less likely tochurn?
+Are custs with a graduate degree less likely tochurn? Are custin the lower
+income bracket more likely to churn? Are homeowners less likely tochurn?
+Are custs with no property more likely tochurn?
+
+Behaviour--Are vintage cust less likely tochurn?Are cust with higher avg bal less likely to churn? Are custs dropping 
+monthly bal high likely to churn?custs with dependent are less likely to atrite?
+Are custs who recently unfollowed us on social media more likely to churn?
+Are cust who closed a busin loan prematurely morelikely to churn?
+Psychographic--
+Do custs that are inherently more loyal less likely to churn?Do custs that 
+have interest in sports more likely tochurn? Do customers who go tomovies often 
+highly likely to churn?
+Are custs that arepassive shoppers more likely tochurn? Are custs who switch jobs
+regularly more likely to churn?
+Cust who are avid gamers more likely to churn?
+
+
+Other factors--
+custs getting a low rate of interest in fixed deposit compared to competitor banks are more
+likely to churn? Custs incurring ahigh rate of interst in edu loan compared to competitor banks 
+are morelikely tochurn? Cust getting alow rate ofinterst in recurring deposit compared to competitor
+banks are more likely to churn?
+
+
+List of hypotheses for the below problem statement:
+
+What customer segments are more likely to churn balances in the next quarter by at least 50% vis-a-vis current quarter?
+
+
+
+Demographics
+
+Are females less likely to churn than males?
+Are young customers more likely to churn?
+Are customers located in Tier-1 cities more likely to churn?
+Are married people less likely to churn?
+Are older customers less likely to churn?
+Are customers in the lower income bracket more likely to churn?
+Are customers in the middle income bracket more likely to churn?
+Are customers in the higher income bracket more likely to churn?
+Are bachelors more prone to churning?
+Are customers with dependent(s) less likely to churn?
+Customers with an average family size less than 4 are more likely to attrite?
+Customers staying in a joint family are less likely to churn?
+Are homeowners (property holders) less likely to churn?
+Are customers with no property to their name more likely to churn?
+People with a disability are less likely to attrite?
+Are customers with 2 or more cars less likely to churn?
+Are customers who own no cars highly likely to churn?
+Are customers with a graduate degree less likely to churn?
+Are customers with no college degree more likely to churn?
+Customers living outside the country are less likely to churn?
+Customers holding a life insurance scheme are less likely to churn?
+Are people living closer to a bank branch less likely to churn?
+Customers holding a term insurance scheme are less likely to churn?
+
+
+Behaviour
+
+Are vintage customers less likely to churn?
+Are customers with higher average balance less likely to churn?
+Are customers dropping monthly balance high likely to churn?
+Customers who use netbanking are less likely to churn?
+Customers who do frequent digital transactions are less likely to churn?
+Are customers who hold a government scheme less likely to churn?
+Customers who haven’t performed a single online transaction are more likely to churn?
+Customers who hold a credit card are less likely to churn?
+Customers who have taken a house loan are less likely to churn?
+Customers who have taken a car/vehicle loan are less likely to churn?
+Customers who have taken a business loan are less likely to churn?
+Customers who have taken an education loan are less likely to churn?
+People eating out more than twice a week are less likely to churn?
+Are customers who recently unsubscribed from our emails more likely to churn?
+Are customers who recently unfollowed us on social media more likely to churn?
+Customers with high engagement in first month are less likely to churn?
+Are customers with no transaction is the last 3 months more likely to churn?
+Customers who use phone banking frequently are less likely to churn?
+Customers who use mobile banking frequently are less likely to churn?
+Are customers who frequently withdraw cash from ATM less likely to churn?
+Are customers who have large withdrawal amount in the last month more likely to churn?
+Are customers who have large withdrawal amount in the last quarter more likely to churn?
+Are customers with less than 10 or more transactions in the last month more likely to churn?
+Customers who invest in the stock market are less likely to churn?
+Customers holding a fixed deposit account are less likely to churn?
+Are customers who closed a FD account prematurely more likely to churn?
+Are customers who closed a recurring deposit account prematurely more likely to churn?
+Customers holding without a DEMAT account are more likely to churn?
+Are customers who closed an education loan prematurely more likely to churn?
+Are customers who closed a car/vehicle loan prematurely more likely to churn?
+Are customers who closed a business loan prematurely more likely to churn?
+Are customers who closed a house loan prematurely more likely to churn?
+Customers who have not engaged with the bank in last quarter are more likely to churn?
+Customers who closed their DEMAT account in the last 6 months are more likely to churn?
+Customers who cancelled their credit/debit card in the last 6 months are more likely to churn?
+Are customers with a high complaint rate are more likely to churn?
+Are customers with a high query rate more likely to churn?
+Customers who buy premium smartphones annually are less likely to churn?
+Customers with multiple bank accounts are more likely to churn?
+Are customers with a low credit score more likely to churn?
+Customers who have defaulted on loan payment in the past are more likely to churn?
+Customers who have defaulted on credit card payment in the past are more likely to churn?
+Customers who have defaulted on property tax payment in the past are more likely to churn?
+Customers who have defaulted on telephone bill in the past are more likely to churn?
+Customers who have defaulted on electricity bill payment in the past are more likely to churn?
+
+
+Psychographic
+
+Do customers that are inherently more loyal less likely to churn?
+Do customers that have interest in sports more likely to churn?
+Do customers who go to movies often high likely to churn?
+Customers who are avid gamers are more likely to churn?
+Are customers who follow the stock market closely more likely to churn?
+Do customers that are passive shoppers more likely to churn?
+Do customers who don’t pick up bank’s calls more likely to churn?
+Are customers who switch jobs regularly more likely to churn?
+Are customers with a criminal record more likely to churn?
+
+
+Other factors
+
+Customers getting a low rate of interest in fixed deposit compared to competitor banks are more likely to churn?
+Customers getting a low rate of interest in recurring deposit compared to competitor banks are more likely to churn?
+Customers incurring a high rate of interest in house loan compared to competitor banks are more likely to churn?
+Customers incurring a high rate of interest in car/vehicle loan compared to competitor banks are more likely to churn?
+Customers incurring a high rate of interest in education loan compared to competitor banks are more likely to churn?
+Customers incurring a high rate of interest in business loan compared to competitor banks are more likely to churn?
+
+
+Exercise – Generate hypothesis for the below problem statements
+
+2 DISCUSSIONS
+2DISCUSSIONSEnable fullscreen
+Use the framework and the approaches we have discussed in this module and try to come up with an exhaustive list of hypotheses for the below problem statements. This will help you understand how the process works in the industry.
+
+Credit card fraud is a challenge every bank faces. The Bank of Athelonia wants to you to increase customer retention by preventing or minimizing credit card fraud. Build a set of hypothesis that can be tested later based on the data available.
+Your client is a large MNC and they have 9 broad verticals across the organisation. One of the problems your client is facing is around identifying the right people for promotion (only for manager position and below) and prepare them in time. Currently the process, they are following is:
+They first identify a set of employees based on recommendations/ past performance
+Selected employees go through the separate training and evaluation program for each vertical. These programs are based on the required skill of each vertical
+At the end of the program, based on various factors such as training performance, KPI completion (only employees with KPIs completed greater than 60% are considered) etc., employee gets promotion
+For the above mentioned process, the final promotions are only announced after the evaluationand this leads to delay in transition to their new roles. Hence, the company needs your help in identifying the eligible candidates at a particular checkpoint so that they can expedite the entire promotion cycle. Generate a comprehensive list of hypothesis.
+
+This is an excellent problem you can even test your data science skills on here.
+
+Your client is a meal delivery company which operates in multiple cities. They have various fulfillment centers in these cities for dispatching meal orders to their customers. The client wants you to help these centers with demand forecasting for upcoming weeks so that these centers will plan the stock of raw materials accordingly.
+
+Another superb problem to work on here.--https://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon-1/
+
+A retail company “ABC Private Limited” wants to understand the customer purchase behavior (specifically, purchase amount) against various products of different categories. Now, they want to build a model to predict the purchase amount of a customer against various products which will help them to create personalized offer for customers against different products.
+ 
+
+Data Extraction and cleaning--
+mapping data elements to hypo---
+so,coming to 2nd step-- check if these variables are avilable or can be collected?--
+Every organization collects data at  various points of interaction with customer.NOw,our job is tomatch
+the best data source to each hypowe want to test.So finding the best data might become very confusing,if
+not done in a sructured way.
+These data elements will helpus to accept or, reject a null hypo.
+
+
+Mapping teamsto data elements--
+Consider a scenario--As aretailchain owner,ur salesare going down.You want tofixit
+
+list of hypo--
+Seasonality effect-- are there specific months when the sales drop?
+change in product selection- have we changed product selections we carry in store that has droppd our sales?
+Some geographics facing technical challenges on payment that has contributed to dropin sales.
+Overall industry trend /higher competiion-has there been any significant change
+in strategy taken by competition that has shiftedour sales.
+Change in store location or layout-- have we recently changed anything in store location
+or layout that has dropped our sales.
+The real list of hypo will bemuchmore bigger than this.
+
+Now,list down data points u will need to validae this data.
+
+for seasonality effect-- retail sales over time.
+changein product selection?-- list of produccts available over time. 
+some geographics facing technical challenges on payment?--payment data across geographics
+overall industry trend/higher competition?-competitive analysis
+change in store location or layout?-- data showing any significant changes tostore location/layout
+in recent past.
+
+Now, thinkabout the teams u should reach out to get each of these data elements.--
+So,
+retail salesover time-- finance team & operations team
+list ofproducts availableover time--product/portfolio managers
+payment data across geographics-- core op team
+competitive analysis-- external research parrtners.
+Data showing any significant changes tostore location/layout in recent past--
+store mgmt.
+Now,comprehensive hypo testng might need reaching out to multiple business/ops/finance partners.
+Hence structured comm becomes a key for the success of data sci projects.
+
+Framework Cased---5step framework to check if fetching each of our data elements map to our hypo is even feasible.
+Call this framework CASED.
+1.clenliness of data-- even tough we will want to clean the data in our modelling process,we really want to assess the effort to 
+gain ratio at this point.for eg 5 yeas back analytics industry lagged high quality speech-to-text conversion systems.
+For sentence that was said as -Take this cource, Such a system wil capture it as ,Take his horse.
+Can u really cean the sentence are retain its original form?NOt sure, becuase there is nolinkage between what was said
+and what was captured.
+In such cases we are beter off excluding such data sources right at the beginning.
+2. Avilabiltiy of historical data--Our analysis generally require certain amount of historical data for each hypo we are trying to validate.
+In the absence of history that data might just be useless.
+3. Structure compatibilty---if u have most of the data in the form of structured tables,u want to assess if it is evenworthwhile spendingtme on sovcial media
+comments that might require some work to bring this unsructured data to a structured format.
+4.Expense-- this dim captures both expense in terms of face vlue u will pay and time team needs to 
+spend to procure such a data.For instance, a 3rd party might charge a cost on competitive analysis they have done through service
+that might really outweigh the benefits we get out of this additional data and hence, it might not be even feasible given the high cost.
+5.Dependency-- Even though our training and validation of models require the data now, if our data source is dependent on unreliable partner ,it
+might be  pointless to use this data right now bcause when we will be deploying thismodel,we might not really have the right dataset for scoring our model.
+
+Now think of these 5 from sales over time, payment data and competitive data perspective.
+lets say sales over time is feasible and ticks for all 5 then it is ready to be collected.
+Payment data--1 and 2nd--not , competitive data-- expense and dependency -not
+Soit is not feasible to goahead with the data sourcing
+
+
+Now checking for data alignment with implementation--
+U should must condsider this step in the pre-data collection period.
+eg
+a bank is facing challenge that many high value customers are leaving bank.
+Bank wants to creae tool for relationship managers(RM) to identify customers
+at risk of leaving.Now, RMs wants to use tis list for weekly interactons.
+And get an analyst and creates a predictive model topredict custs that might be at the verge of leaving.
+Now,after tis 1of the most imp variable comes out to be- whether the cust visited the branch in the last 7 days.
+This data is captured bybranch and shared with modelling team once a year.
+
+Now, can u really use this model to change weeklyinteractions?
+
+No,becuase as the modelwillweight to ge the refereshed data frombranch that gets updated only manually.
+So by the timemodel gets the updated data,the custs who were at the vergeof attrition were already gone.
+So,this is a classic eg in which there is a misalignment in the freq of data that we require frcreating a model
+and the freq on which we have to make sure the implementation is going out.
+
+So,the ques u should always ask tomake sure ur data is aligned tothe implementation--
+or ques that we need to ask before we start collectig data--
+what strategic action can we drive from this model? Would the project implementation lead to a change in 
+cust behaviour that should be accounted upfront?
+Is the freq and structure of the model o/p aligned to this strategy?
+is the freq of the i/p variables sufficient to create the required freq of model o/p?
+
+
+-Data pull and clean--
+Data pulling is timeconsuming and expensive exercise.
+People start pulling data from the source before finalizing the data requieremnet.
+This approach has serious setbacks on both acc and time consumed.
+So,finalize the list of all possible raw variable required before u start pulling data.
+This approch eliminates redundant data pulls from the source.
+For instance, an e-commerce company needs Age of al customers today and at the time of first purchase. 
+
+Now,age of cust today=today's date-dob
+age of cust at time of first purchase=date of first purchase-dob
+Now, this dob is common in both the data.So idea here is to pull dob only once.
+
+Now,cleaning at this stage : missing vlues treatment.
+then outlier-- these are the observations that have attributes significantly diff from majority of observations.
+This can result naturally(in true value) or as a error in data collection or data extraction process
+There can be some natural outliers.eg-ssalaries of executives in a company.
+removing duplictes andfixing anomalies in data.
+
+Validating hypo--
+validate ur hyp -Some visualization tech commonly used for hypo testing.
+
+Now, u allhave travelled with uber orother mobile app based taxi.Dou know what it takes to make such a company profitable?
+These companies invests heavily on data tomake sure that their operational efficiencies are always optimized.
+One of the analyticalprob they actively solve is to predict how long a driver will have his taxi occupied. Such info can greatly 
+help taxi company to assign driver to each pickup location,improving operational efficiency.
+
+So,coming to hypo--
+what are the possible factors that can effect the time duration of a taxi trip--
+diff vendors providing the taxi have diff performance.Time of day has impact on timeduration.
+Day ofWeek has impact on time duration where trafficon the road matters.
+
+Then how dowe validate these hypothesis?--Obviously with the helpof data.
+
+So, for this course i have collected data from Taxi & limousine commission.
+
+https://www.nyc.gov/site/tlc/index.page
+
+https://www.youtube.com/watch?v=rb-B0z8dwls
+
+https://stats.stackexchange.com/questions/9573/t-test-for-non-normal-when-n50
+
+https://www.isixsigma.com/tools-templates/normality/dealing-non-normal-data-strategies-and-tools/
+
+Lets say our null hypois - vendor providing the cab/taxi has no impact on the duration of trip.
+Lets say we plotted nullhypo.Now seeing if we can reject this nullhypo.
+y-axis tripduration, x-axis- vendorid.
+No diff is visible from visualization.Tf,null hypo acceptedi.e. vendor has no impac on duration of trips.
+
+2nd hypo--
+time of day has noimpacts on the duration of trip.
+Then plotting trip duration with hour ofthe day---
+the key observation from visualization is--
+trips and trip duration drops significantly in early mrninghours.
+Trip duration peaks aound3 p.m.and then starts dropping in the late evening.
+So,null rejected--i.e. time of the day has an impact on duration of the trip.
+
+Nullhypo-- day of weeek has no impactonthe duration of trip.
+so dayof week-x, trip duration-y
+nullrejected -- day ofweek has an impact on duration of the trip.
+
+Null hypo-- vendor providing the cab and #passengers together have no 
+impact on trip duration.
+plotting- passenger count-x and totalnumber of pickups--y
+then plotting--violin plot for seeing if interaction bet no of passengers
+and vendor id ,have any impact on the trip duration.
+nullhypo accepted.
+
+
+Link backto business problem--
+when we have our hypo readay, then we move to 2nd step of hypo testng framework,
+where we check if it is even feasible to pull each ofour data element.
+For our use cse,we will group our data into 3 categories. - demogrphic,behavioral and psychographic.
+This is because allthe elemnts in these 3 categories have almost identical feasibiity metric.
+
+dim CASED- cols behavioural,demographic,psychographic
+so the behavioural data is housed internally with the bank.Soit checks alldims.
+demographic data include age gender, eduction etc.--collected on papaer.Needs tobe enteredmanually 
+on system.Because these data ispresent with the bank in hardcopies.To create digitalcopies manually
+data is filled.
+so cleanliness and expense-cross or x
+psychographic data--includes cust preferences,attitde of cust and othe s/w aspect.
+This data is currently not available within premises.
+Need 3rd party to collect data.Can be made avialbel for only few vintages.
+
+Now pulling and listing our data.Following the best practice to pull the data, first list the hypo, then find the mathematical fun we need to validate these hypo, and finally mention the data element we need to put.Note that as behavioural data is all in-house available dfs we will skip that part where we map the teams we need to reach out to procure this data.
+Here are the top 4 hypo with mathematical funcs--
+are vintage custmers less likely to churn?
+formula-- today's date-customer acquisition date
+variables req-- cust aquistion date
+
+2. are customers with higher avg balance les likely to churn?-- avg daily balance @ month T
+--- vari req-- bal@T
+
+3. are customers dropping monthly bal high likely to churn?-- (End bal@month T- Average bal@month T)/avg bal@month T---- var req--- bal@T & End_Bal@T
+
+4. customers with dependent are less likely to churn?-- #Dependents>0  -- vars req-- Dependents_no
+
+Now, bal@T is required for 2 diff hypothesis.
+So, doing this analysis can hep us avoid duplicate data pulls.
+So, we should pull month's avg bal and month's end bal only once and then create transformed variables.
+
+
+Now, after pulling our data,we will then start cleaning our data.Lets say we start by a missing value treatment.Lets say taking eg of #Dependents and % change in credits given to the cust between month T and month T-1.
+outlier trreatment,etc.
+
+Once we are done with data clleaning, we are at the last step, i.e. validating hyp with data.
+eg we will test 3 diff hypo.
+vintage: (today's date-cust aquisition date)
+seeing visualization-- churn - vintage----- approved.
+
+decrease in end period bal to avg bal ratio(end bal @ month T - avg bal @ month T)/avg bal @ month T---- this is the indicator of whether a cust is declining his bal in the recent past.
+--visua --churn vs end of period to avg bal ratio.-------approved.
+
+
+
+avg bal(avg daily bal @ month T)
+yes -- avg bal has impact on whether cust will churn or not.
+
+Module-- data modelling----
+
+tell about Predictive algo
+
+5 step framewrok for model building-- TESTS--
+target variable discovery--->evaluation metric--->sampling of training and validation---->train ur model--->score ur model.
+
+1. Target variable discovery--till this point , u have converted a business prob into an analytical prob.Here is an eg of analytical/data problem-- ABC retail store has been loosing sales primarily bcoz of custs becoming inactive as a result of competition strategy.It generally takes 3 months for conversion of a fully engaged custo to become completely inactive.Create a proactive retention model that can help target such custs at the verge of starting the journey to inactivity.
+
+Now think what is the right targte variable to model?
+Try answering the quests below to completely define the target variable: how do u define inactivity?
+Is it that the cust should bring his overall spend to zero?or the cust should reduce spends to like 50% or 30%. or it can be an unsubscription of some kind of loyalty prog.
+So there are so many def which can map to inactivity.This ques is more for busines than for data based exercise.
+Second is the timing of the action that leads to the desired effect.In this case,when should u start  the action related to the proactive retention?i.e. how much before the event do u want to start taking actions for pro-active retention?
+3rd is to understand any lags in the implementation. Is there a lag betw model outcome and fianl action?
+
+SO finally, we can define target variable as- custs that drop their spends 90% over a period of 3 months after 1 month of implementation lag.
+
+8.4 evaluation metric--
+E-- evaluation metric alignment with business affected.
+performance metircs--- divided into o/p var- cont and o/p var binary.
+
+conti-- evaluation metric-- mse,mae,rmsle
+classi-- accu score,AUC,logloss,gini,f1-score
+ranking-- eg find top 20% custs who might be willing to increase credit limit.--lift/gain, MAP@k,NDOG@k
+
+S-- sampling of train and validate---
+
+
+or List and Declines respectively:
+
+https://www.investopedia.com/terms/d/decile.asp
+
+https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/
+
+
+T-train your model--
+Score new popul--
+
+Link back to business prob--
+
+target variable discovery--
+generic target variable-- identify custs that drop their bal by x% over a period of 3 months after z month of implementation lag.
+Try to investigate the reasons of leaving--
+
+primary reasons are--
+80% cust leave bcoz of an annual fee that is charged from year 2 of $100
+10% cust leave because of a competioons promotional acquisition offer
+10% cust leave bcoz of unknown reasons.
+
+These nos. may not be very accurate.However tehy give you a good sense of which of these problems u should focus on while crafting the sol. So we can focus on - 80% of the custs leave teh bank just becoz of the annual fee. And refund them the annual fee so that we can retain these custs.
+So, next what is the total budget of the money we are refunding ? Because generally the campaign will cost the company alot in terms of creating that camapaign, executing that campaign and the payback amount to the cust.
+So here lets ignore all the other costs and focus just on the cost we have to incur becoz we are refunding back the annual fee to the cust.SO. lets say the total budget we have for the campaign = $20/cust for the entire portfolio. And because our annual fee is 100$,
+we can target 20% of our customer.
+Hence for a fee waiver , we can target $20/$100  equivalent to 20% of customers.
+
+Now coming to our basic problem--
+i.e. identify custs that drop their bal by x% ovr a periiod of 3 months aftyer z month of implementation lag.
+
+Now finding x%---- here is multiple scenarios in which we keep diff thresholds and try to simulate our % popu that we will be targeting and the acco churn rate in 1 year.So the last col can be anything which is aligned to ur busines.eg--
+%bal decrease in 3 months-30% , %population-50% qualifying this out of which 50% acc churn rate in 1 year i.e. closing their account.
+
+for 40%- 35%--65%
+30%-23%-90%
+60%-12%-93%
+70%-5%-95%
+
+Now, what is the right scenario on which we will keep our threshold.
+
+Lets say we choose the scenario with 50%.Becoz when we move from 40% to 50%, the acc churn rate increases significantly from 65% to 90%.Now, moving threshold further,i.e. 60 %, the acc churn rate improves, but it doesnot improve significantly i.e. only 3%.
+
+
+So now we have found 2 metrics in our generic target variable.
+i.e. identify customers that drop their bal by 50% over a period of 3 months after z month of implementation lag.
+
+now, z months is for implementation lag.
+NOw, lets say-- day 1 month begin, 10th data uploaded . Next we score customers over a peroid of 5 days.There are alot of validation we need ot do.Next we create a cust list which should be sent to all the relationship managers which will take additional 5 days.This to make that the list is accurate and every relationship manager only gets the cust which belongs to him or her. So day 20th--cust list sent to RM. RM takes 5 days to take action. i.e. 25+ days.
+i.e. in total 1 month lag betw when the month starts and when we finally take an action and hence we can take into consideration 1 month lag.
+tf, target variable====
+identify custs that drop their bal by 50% over a period of 3 months after 1 month of implementation lag.
+
+Now, coming to 2nd part of our frame work-- e --evaluation metric.--
+
+Now, what are we trying to achieve in this modelling exercise?
+top 20% custs that are likely to decrease their bal by 50% in 3 months with a month lag.
+
+is the target a binary variable?--yes---is the prob of event more imp or the relative rank order?---rank---so go for ranking metircs.--response rate-- %popu that have a bal churn of 50%+. Obje of the analysis-- maximize the response rate of 20% selected population.Evaluation metric-- lift@ top 2 decile with highest response rate.
+
+Then coming to S-- sampling training and validation--
+So wrt time we will divide our trainig sample  into  in-time validation sAMPLE  and out of time validation window.
+samples will be further divide into observation window, then there is lag and then into performance window which is a 3 month window in which we will see if the cust has dropped the bal by 50% or not and create a binary variable for every single observation
+
+T trainmodel-- we can train 1000s of models,but for this course we have trained 3 models.
+lets say logisticRegres,dt and rf and samples req for them are train,in-time validation,out-of-time valida.
+LR-(1.32,1.32,1.31),(in-time valid--1.32,1.45,1.64),(out-of-time validation--1.31,1.44,1.63)
+
+Now,for theselection of models,we think of 3 dims-- one is the pred power of the model,stability of model and 3rd is the resource req for this model to execute in the live production environment.
+
+rf satisfies all the criteria. DT doesnot have stability,LR doesnot have Predictive Power.
+So selecting RF.
+
+Now,bringing the model into live predictive environment--  
+
+So,in 1st step,cust interacts with  bank.2nd-cust data is stored in servers.3rd step RF scores the server.
+4th step-- analytical decision point is taken.i.e target or non-target customer. Then the business strategy is created.
+
+Post-modelling Steps--
+2 types of predictive models used in the industry aare--predictive model as a product and predictive model as a service.
+Now,products such as amazon recommendation engine, google homme,siri , alexa and u have augmented reality.
+Here, define business prob--hypo testing---model building--modedldevops team will deploy the model.
+then as a service-- baed on pred models,strategies are made.
+define busine problem--hypo testing--modelbuilding--from this model strategy is created--the strategy is then deployed.
+
+that is the key diff betweem predictive model as a product and pred model as a service.
+
+For our course pred model as strategy--
+
+the o/p of an analytical model can looklike--
+cust_id pred_bal churn_proba target_rank next_offer	Channel_of_pref
+ABC	$1000	 0.15		5	 Cash Card	Web
+CDE	$2000	 0.88		1000	 Trvel Card	Direct Mail
+DEF	$2500	 0.45		78	 Value Card	Mobile
+
+Now,converting model to strategy--
+collate all the dims of target population.Review success or kpi matrix by recapturing them during strategy.
+Find levers that can lead to the success or lead to improvement inkpi.Create strategy.
+
+1st step 
+collate all the dims of target population-- u r the head of ds in a retail banking firm.U want to target ur 
+existing high value custms for opening a fixed deposit account. How, will u define target popuation?
+1st start with breaking down def of high value.
+for eg, high value can be like---
+cust value=lifetime*avg bal*prod margin
+this gives total value cust has gnerated over the lifetime he/she stays with the bank.
+
+Now,wehave to think which of these 3 metrics comes frompred model vs from business judgement.
+
+lifetime-- can come form pred model,avg bal form pred model.However product margin doesnot move alot 
+and hence this can be used as a business dim.
+
+Now,busines dim will be something like if uhave diff tyes of acc,
+the product margin is fixed. So for adollar in bal,u exactly know what is a product margin.
+ie. 
+account,product_margin
+saving,0.001%
+checking,0.002%
+fd	,0.005%
+
+Now, nd step-- reveiw success/KPI--this we have done earlier before hypo testing or model building.
+Here we will doit again.So, what does the success look like? what is the main KPI we want to chnge 
+using pred model? if we have multiple kp, shuld we address 1 kpi at atime? if we move the kpi in +ve
+dire, doesit impact some other busin metric adversely?
+
+So,lets say-- success=higher take-upof FD product by existing customers.
+kpi=increase in cross sell of fd prod for existing custs.
+
+Now,u want to increase this kpi.
+
+3rd step-- find levers that can lead to success.
+visualize the funnel of the success path.ie. the sucess path is from the point when a cust got an intention to buy
+to the point where the cust makes the final purchase.  SO ,whta were the granular steps taken by cust?
+the cust strated by an intention to buy. Now the cust is comparing across all the competitors. The cust finally narroowed 
+down to a few custs and finally, cust decides to go with  the one fills all the formalities and finally makes purchase.
+Then come tothe motivation facotrs which leads from 2nd stepto3rd step and furthr.Then which of these factors can we influence?
+Those are the levers.
+
+lets say 3 stps are--
+stage,motivtion,Now,getting on tothedata to get the selction steps.
+out of all the cust base I have how mny have intention to buy, incentive offer dispansable bal--0.1%
+compare products, best pricing brands--30%
+fill application,ease of appfilling.Drop off followups.--70%
+
+Once we have evrything-- create strategy.
+
+now the subjective part starts highly driven by business- bring dims o target audience and factors together
+to create a business strategy.U shld always try  to minimize the no. of dimswhile ccreatinga strategy.
+for teh target popul.
+So,cust value=lifetime*avgbal*productmargin can be squeezed to--
+cust value=lifetime*predicted annual revenue
+See which of the scenarios gives u highest business value and choose taht.
+
+
+Dashboards--
+Now, we have 2 diff metrics business and statistical and they can be diff from one another.
+So wehaveto see if the model is working or not and 2nd the strategy whch was built on topof ur model is working or not.
+
+So fro buisness metrics u wan to see-
+#total custs, # high value custs,avg lifetime value of all cust with bank,
+avg lifetime value of high value cust with bank, Avg #FD prod owned perhigh
+value cust, avg FD$ owned pre high value cust.
+Need to create busines dashboad
+Statistical metrics-- 
+lift/accu of the lifetime and bal models, popu stbiltiy over time, model performance stability overtme.
+need to create monitoring framework.
+
+NOw how tostructure a business dashbard?--
+we have taken a pyramid principle.goingfrom up in pyramid to down.
+1.start with business main kpi.2 break kpi into componeents i.e. component 1,2,3.. 3. u can furher divide
+these components into drivers which are driving these components.
+
+For eg looking at business  kpi.. how is is trending over time?
+ifits trending +vley,my model and strategy isworking fine.Howeverr if is trending down
+or any type of counter-intutive inference, wich im getting out of this dashboard,
+i will want todrilldown and see the componentts which are driving this main kpi.
+which of those components is biasing orbringing the main kpi down.
+And then i will go down tothedrivers ofthose components.
+
+MOnitoring framework can again be done on pyramid format.
+so,evaluation metric-->popu distribution & evaluation metric on popu segments gives
+popu stability index and popu segment level perf.--then check if hypo that made sense still make sense.
+eg var importance of var1,var imp of varr2,var imp of var3..etc.
+
+Linking back everthing to main prob stmt.--
+1st wewillstart with what wasthe actualprob?--
+falling/stagnating bal for cust in last 3 months.
+
+so,dropin bal= p(baldrop)*extent of baldrop* customers initial bal
+p-prob
+so,dopin bal=p(cust dropping bal by 50% or so)* cust initial bal
+
+p(cust dropping bal by 50% or so)--predicted from model
+cust initial bal--from business metric.
+
+Now,success-- to decrease dropin bal. Main KPI--total bal of the portfolio.
+
+finding levers--
+satge,mtivation
+intention to dropbal-finds a beter bank,.Annnual fee charged in 2nd year.
+find an alternate--compare metrics T&C toclos an acc
+Make change--ease ofmovingbal inhigh volume.Any retention offers.
+
+NOw segment these custs  into grow,proect,BAU,defend with lowcost measures.
+protect lessay by--waive off annual fee, pre-emptive retention call,retention call,
+assign relation mgr fro personlized service.
+defend-- preemptive retention call,cross sell offering that bettere matches the cust need.
+
+
+see 9.3 ppt
+Here we se that majority ofdrop in lift is coming from digital users.
+
+10th module--
+
+Structured thinking for comm--
+pyramid principle
+
+Answer-->key points--->details/evidence
+
+components of pyramidprinciple-- SCQA and MECE--
+
+Situation-- the eyecare spectacle company has shown steady increase in year-on-year
+revenue and profit.
+Complication-- the company's revenue went south in the last quarter - a rare instance
+in eyecare's long history.
+Quest-- how can the company increase profitability in its spectacle products?
+ans--give with the help of MECE concept.-- mutualy exclusive collectively exhaustive
+ 
+How Google Works (Eric Schmidt):
+
+https://www.slideshare.net/ericschmidt/how-google-works-final-1
+
+ 
+
+Democratizing Data at Airbnb (Chris Williams and John Bodley):
+
+https://www.slideshare.net/neo4j/graphconnect-europe-2017-democratizing-data-at-airbnb
+
+ 
+
+Personalization at Stitch Fix (Brad Klingenberg):
+
+https://www.slideshare.net/BradKlingenberg/personalization-and-retail-lessons-from-stitch-fix
+
+ 
+
+Industrial Machine Learning (Joshua Bloom):
+
+https://www.slideshare.net/JoshuaBloom/industrial-machine-learning-sigkdd17
+
+		
+
+
+
+
+  
